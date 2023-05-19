@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, button {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-align: center;
+    background-image: url(https://i.postimg.cc/J0pNWswn/keith-misner-h0-Vxgz5ty-XA-unsplash.jpg);
+  }
+  
+  .container {
+      display:flex;
+      justify-content: center;
+  }
+  
+  .calc-container {
+      width: 40vh;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 10px;
+  }
+  
+  button {
+      border: 1px solid black;
+      border-radius: 10px;
+      height: 50px;
+      width: 50px;
+      margin: 5px;
+      background-color: transparent;
+      color: black;
+      font-size: large;
+  }
+  
+  button:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  input {
+      margin: 5px;
+      background-color: transparent;
+      color: white;
+      width: 80%;
+      height: 50px;
+      font-size: 30px;
+      text-align: end;
+  }
+  
+  
+  
