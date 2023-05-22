@@ -28,7 +28,7 @@
       margin: 5px;
       background-color: white;
       color: black;
-      opacity: 80%;
+      opacity: 75%;
       font-size: large;
       
   }
@@ -36,7 +36,7 @@
   button:hover {
       background-color: black;
       color: white;
-      opacity: 150%;
+      opacity: 100%;
   }
   
   input {
