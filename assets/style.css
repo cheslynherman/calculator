@@ -26,14 +26,17 @@
       height: 50px;
       width: 50px;
       margin: 5px;
-      background-color: transparent;
+      background-color: white;
       color: black;
+      opacity: 80%;
       font-size: large;
+      
   }
   
   button:hover {
       background-color: black;
       color: white;
+      opacity: 150%;
   }
   
   input {

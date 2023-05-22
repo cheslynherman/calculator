@@ -1,10 +1,10 @@
 let calcScreen= document.getElementById("calc-screen")
-// calculator display
+// calculator display. After targetting the text screen, the value of the function clears calculator screen.
 function calcClear() {
     calcScreen.value = ""; 
 }
 
-// calcutor number functions
+// calculator number functions. targetting each function individually as each number has a different ID.
 function calcNum9() {
     calcScreen.value += document.getElementById("calc-num9").innerText
 }
@@ -47,12 +47,22 @@ function calcNum0() {
     calcScreen.value += document.getElementById("calc-num0").innerText
 }
 
-
-// Operations
-function calcOp() {
-    var a= document.getElementById("calcScreen").value; 
-    var b= eval(a);
-    document.getElementById("calcScreen").value=a;
-    toggleAllowComma();
+function calcNumDec() {
+    calcScreen.value += document.getElementById("calc-num-dec").innerText
 }
 
+// Operations. After targetting the calcScreen, operations within function parentheses will be displayed.
+function calcOp(operation) {
+    calcScreen.value = calcScreen.value + operation;
+}
+
+// Equal Sign function. targetting the sum thats on the calc screen and then using the eval function to receive the result.
+function calcEval() {
+    calcScreen.value = eval(calcScreen.value);
+}
+
+// Delete Function. Declaring a variable in order to target the substring in the display
+function calcDel() {
+    let del = calcScreen.value;
+    calcScreen.value = del.substring (0, del.length - 1);
+ }
