@@ -49,6 +49,7 @@ function calcNum0() {
 
 function calcNumDec() {
     calcScreen.value += document.getElementById("calc-num-dec").innerText
+    
 }
 
 // Operations. After targetting the calcScreen, operations within function parentheses will be displayed.
